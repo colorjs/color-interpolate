@@ -1,6 +1,6 @@
 # color-interpolate [![stable](http://badges.github.io/stability-badges/dist/stable.svg)](http://github.com/badges/stability-badges)
 
-For a given palette, return color by any float index. Useful for colormaps or interpolating color palettes.
+For a given palette, return color by any float index. Useful for interpolating colormaps or color palettes.
 
 ## Usage
 
@@ -24,7 +24,7 @@ let gray = colormap(.5); // 'rgb(128, 128, 128)'
 </details>
 <details><summary>**`let palette = interpolate(colors);`**</summary>
 
-Create interpolator from a list of colors. Colors can be in any format: css color string, array with rgb channel values, object with `r`, `g`, `b` or `h`, `s`, `l` channel values or even a number, see [color-parse](https://npmjs.org/color-parse) for the reference.
+Create interpolator from a list of colors. Colors can be in any format: css color string, array with rgb channel values, object with `r`, `g`, `b` or `h`, `s`, `l` channel values or even a number, see [color-parse](https://github.com/dfcreative/color-parse) for reference.
 
 Example:
 
@@ -32,6 +32,7 @@ Example:
 const palettes = require('nice-color-palettes');
 const interpolate = require('color-interpolate');
 
+//pick random palette
 let palette = interpolate(palettes[32]);
 
 let activeColor = palette(.2); // 'rgb(51, 23 47)'
@@ -42,9 +43,13 @@ let foreground = palette(0); // 'rgb(0, 0, 0)'
 </details>
 <details><summary>**`let color = palette(index, mix?);`**</summary>
 
-Get interpolated color from palette by `index` value within `0..1` range. Pass optional `mix` function to use custom interpolator, by default [lerp](https://npmjs.org/package/lerp) is used.
+Get interpolated color from palette by `index` value within `0..1` range. Pass optional `mix` function to use custom interpolator, by default [lerp](https://npmjs.org/package/lerp) is used, but [smoothstep](https://npmjs.org/package/smoothstep) can be used as an alternative.
 
 </details>
+
+## Credits
+
+Thanks to **[@mattdesl](https://github.com/mattdesl/)** for [interpolation](https://github.com/mattdesl/interpolation) functions and **[mikkoh](https://github.com/mikkoh/)** for API insight in [interpolation-arrays](https://github.com/jam3/interpolation-arrays).
 
 ## In the wild
 
@@ -52,10 +57,6 @@ Get interpolated color from palette by `index` value within `0..1` range. Pass o
 > [gl-waveform](https://github.com/audio-lab/gl-waveform)<br/>
 > [gl-spectrogram](https://github.com/audio-lab/gl-spectrogram)<br/>
 > [gl-spectrum](https://github.com/audio-lab/gl-spectrum)<br/>
-
-## Credits
-
-Thanks to [mattdesl](https://github.com/mattdesl/) for [interpolation](https://github.com/mattdesl/interpolation) functions and [mikkoh](https://github.com/mikkoh/) for API insight in [interpolation-arrays](https://github.com/jam3/interpolation-arrays).
 
 ## Related
 
