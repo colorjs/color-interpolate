@@ -24,7 +24,7 @@ let gray = colormap(.5); // 'rgb(128, 128, 128)'
 </details>
 <details><summary>**`let palette = interpolate(colors);`**</summary>
 
-Create interpolator from the palette. Colors is a list of color values in any format: css color string, array with rgb channel values, object with `r`, `g`, `b` or `h`, `s`, `l` channel values or even a number, see [color-parse](https://npmjs.org/color-parse) for the reference.
+Create interpolator from a list of colors. Colors can be in any format: css color string, array with rgb channel values, object with `r`, `g`, `b` or `h`, `s`, `l` channel values or even a number, see [color-parse](https://npmjs.org/color-parse) for the reference.
 
 Example:
 
