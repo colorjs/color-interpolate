@@ -49,7 +49,7 @@ Get interpolated color from palette by `index` value within `0..1` range. Pass o
 
 ## Credits
 
-Thanks to **[@mattdesl](https://github.com/mattdesl/)** for [interpolation](https://github.com/mattdesl/interpolation) functions and **[mikkoh](https://github.com/mikkoh/)** for API insight in [interpolation-arrays](https://github.com/jam3/interpolation-arrays).
+Thanks to **[@mattdesl](https://github.com/mattdesl/)** for [interpolation](https://github.com/mattdesl/interpolation) functions and **[@mikkoh](https://github.com/mikkoh/)** for API insight in [interpolation-arrays](https://github.com/jam3/interpolation-arrays).
 
 ## In the wild
 
