@@ -22,7 +22,7 @@ let gray = colormap(.5); // 'rgb(128, 128, 128)'
 `interpolate` is a color interpolator constructor - pass it an array with colors in any format and it will return a function which by any float index will return color, just like a colormap.
 
 </details>
-<details><summary>**`let palette = const interpolate(colors);`**</summary>
+<details><summary>**`let palette = interpolate(colors);`**</summary>
 
 Create interpolator from the palette. Colors is a list of color values in any format: css color string, array with rgb channel values, object with `r`, `g`, `b` or `h`, `s`, `l` channel values or even a number, see [color-parse](https://npmjs.org/color-parse) for the reference.
 
