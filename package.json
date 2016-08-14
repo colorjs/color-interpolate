@@ -1,0 +1,36 @@
+{
+  "name": "color-interpolate",
+  "version": "1.0.0",
+  "description": "Pick color from a given color palette by index",
+  "main": "index.js",
+  "scripts": {
+    "test": "node test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dfcreative/color-interpolate.git"
+  },
+  "keywords": [
+    "color",
+    "interpolate",
+    "lerp",
+    "interpolate-arrays",
+    "interpolation",
+    "lerp",
+    "smootstep",
+    "palette",
+    "colormap"
+  ],
+  "author": "ΔY <dfcreative@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/dfcreative/color-interpolate/issues"
+  },
+  "homepage": "https://github.com/dfcreative/color-interpolate#readme",
+  "dependencies": {
+    "color-parse": "^1.2.0",
+    "color-space": "^1.14.3",
+    "lerp": "^1.0.3",
+    "mumath": "^2.3.0"
+  }
+}
