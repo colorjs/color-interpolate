@@ -9,7 +9,7 @@ For a given palette, return color by any float index. Useful for interpolating c
 ```js
 const interpolate = require('color-interpolate');
 
-let colormap = interpolate(['black', 'white']);
+let colormap = interpolate(['black', 'gray', 'white']);
 let black = colormap(0); // 'rgb(0, 0, 0)'
 let white = colormap(1); // 'rgb(255, 255, 255)'
 let gray = colormap(.5); // 'rgb(128, 128, 128)'
@@ -19,7 +19,7 @@ let gray = colormap(.5); // 'rgb(128, 128, 128)'
 
 <details><summary>**`const interpolate = require('color-interpolate');`**</summary>
 
-`interpolate` is a color interpolator constructor - pass it an array with colors in any format and it will return a function which by any float index will return color, just like a colormap.
+`interpolate` is a color interpolator constructor.
 
 </details>
 <details><summary>**`let palette = interpolate(colors);`**</summary>
@@ -41,9 +41,9 @@ let foreground = palette(0); // 'rgb(0, 0, 0)'
 ```
 
 </details>
-<details><summary>**`let color = palette(index, mix?);`**</summary>
+<details><summary>**`let color = palette(index, fb?);`**</summary>
 
-Get interpolated color from palette by `index` value within `0..1` range. Pass optional `mix` function to use custom interpolator, by default [lerp](https://npmjs.org/package/lerp) is used, but [smoothstep](https://npmjs.org/package/smoothstep) can be used as an alternative.
+Get interpolated color from palette by `index` value within `0..1` range. Pass optional `fn` interpolation function, by default [lerp](https://npmjs.org/package/lerp) is used, but [smoothstep](https://npmjs.org/package/smoothstep) can be used as an alternative.
 
 </details>
 
@@ -60,6 +60,6 @@ Thanks to **[@mattdesl](https://github.com/mattdesl/)** for [interpolation](http
 
 ## Related
 
-> [colormap](https://github.com/bpostlethwaite/colormap) — collecting of beautiful colormaps for data, a good source for palettes.<br/>
-> [nice-color-palettes](https://github.com/jam3/nice-color-palettes) — collection of beautiful color palettes, another good source of palettes.<br/>
+> [colormap](https://github.com/bpostlethwaite/colormap) — collection of beautiful colormaps, a good source for palettes.<br/>
+> [nice-color-palettes](https://github.com/jam3/nice-color-palettes) — collection of beautiful color palettes from colourlovers.<br/>
 
