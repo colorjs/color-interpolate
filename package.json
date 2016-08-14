@@ -31,6 +31,6 @@
     "color-parse": "^1.2.0",
     "color-space": "^1.14.3",
     "lerp": "^1.0.3",
-    "mumath": "^2.3.0"
+    "mumath": "^3.0.0"
   }
 }
