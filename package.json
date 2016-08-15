@@ -19,7 +19,8 @@
     "lerp",
     "smootstep",
     "palette",
-    "colormap"
+    "colormap",
+    "gradient"
   ],
   "author": "ΔY <dfcreative@gmail.com>",
   "license": "MIT",

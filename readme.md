@@ -1,6 +1,6 @@
 # color-interpolate [![stable](http://badges.github.io/stability-badges/dist/stable.svg)](http://github.com/badges/stability-badges)
 
-For a given palette, return color by any float index. Useful for interpolating colormaps or color palettes.
+For a given palette, return color by any float index. Useful for interpolating colormaps, color palettes or even gradients.
 
 ## Usage
 
