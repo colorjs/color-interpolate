@@ -41,7 +41,7 @@ let foreground = palette(0); // 'rgb(0, 0, 0)'
 ```
 
 </details>
-<details><summary>**`let color = palette(index, fb?);`**</summary>
+<details><summary>**`let color = palette(index, fn?);`**</summary>
 
 Get interpolated color from palette by `index` value within `0..1` range. Pass optional `fn` interpolation function, by default [lerp](https://npmjs.org/package/lerp) is used, but [smoothstep](https://npmjs.org/package/smoothstep) can be used as an alternative.
 
