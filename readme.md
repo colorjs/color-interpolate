@@ -62,4 +62,4 @@ Thanks to **[@mattdesl](https://github.com/mattdesl/)** for [interpolation](http
 
 > [colormap](https://github.com/bpostlethwaite/colormap) — collection of beautiful colormaps, a good source for palettes.<br/>
 > [nice-color-palettes](https://github.com/jam3/nice-color-palettes) — collection of beautiful color palettes from colourlovers.<br/>
-
+> [color-alpha](https://github.com/dfcreative/color-alpha) — change alpha of a color string.
