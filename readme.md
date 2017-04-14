@@ -1,5 +1,7 @@
 # color-interpolate [![stable](http://badges.github.io/stability-badges/dist/stable.svg)](http://github.com/badges/stability-badges)
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/colorjs/color-interpolate.svg)](https://greenkeeper.io/)
+
 For a given palette, return color by any float index. Useful for interpolating colormaps, color palettes or even gradients.
 
 ## Usage
