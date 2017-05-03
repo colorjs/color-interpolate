@@ -1,10 +1,11 @@
 {
   "name": "color-interpolate",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Pick color from a given color palette by index",
-  "main": "index.js",
+  "main": "dist/index.js",
   "scripts": {
-    "test": "node test"
+    "test": "node test",
+    "build": "babel index.js --presets babel-preset-es2015 --out-dir dist"
   },
   "repository": {
     "type": "git",
@@ -33,5 +34,9 @@
     "color-space": "^1.14.3",
     "lerp": "^1.0.3",
     "mumath": "^3.0.0"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.24.1",
+    "babel-preset-es2015": "^6.24.1"
   }
 }
