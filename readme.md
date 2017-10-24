@@ -24,7 +24,7 @@ let gray = colormap(.5); // 'rgb(128, 128, 128)'
 </details>
 <details><summary>**`let palette = interpolate(colors);`**</summary>
 
-Create interpolator from a list of colors. Colors can be in any format: css color string, array with rgb channel values, object with `r`, `g`, `b` or `h`, `s`, `l` channel values or even a number, see [color-parse](https://github.com/dfcreative/color-parse) for reference.
+Create interpolator from a list of colors. Colors can be in any format: CSS color string, array with RGB channel values, object with `r`, `g`, `b` or `h`, `s`, `l` channel values or even a number, see [color-parse](https://github.com/dfcreative/color-parse) for reference.
 
 Example:
 
