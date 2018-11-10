@@ -1,6 +1,6 @@
 # color-interpolate [![stable](http://badges.github.io/stability-badges/dist/stable.svg)](http://github.com/badges/stability-badges)
 
-For a given palette, return color by any float index. Useful for interpolating colormaps, color palettes or even gradients.
+For a given palette, return color by any float index. Useful for interpolating colormaps, color palettes or gradients.
 
 ## Usage
 
@@ -17,14 +17,13 @@ let gray = colormap(.5); // 'rgb(128, 128, 128)'
 
 ## API
 
-<details><summary>**`const interpolate = require('color-interpolate');`**</summary>
+### `const interpolate = require('color-interpolate')`
 
 `interpolate` is a color interpolator constructor.
 
-</details>
-<details><summary>**`let palette = interpolate(colors);`**</summary>
+### `let palette = interpolate(colors)`
 
-Create interpolator from a list of colors. Colors can be in any format: css color string, array with rgb channel values, object with `r`, `g`, `b` or `h`, `s`, `l` channel values or even a number, see [color-parse](https://github.com/dy/color-parse) for reference.
+Create interpolator from a list of colors. Colors can be in any format: CSS color string, array with RGB channel values, object with `r`, `g`, `b` or `h`, `s`, `l` channel values or even a number, see [color-parse](https://github.com/dy/color-parse) for reference.
 
 Example:
 
@@ -40,12 +39,10 @@ let background = palette(1); // 'rgb(255, 255, 255)'
 let foreground = palette(0); // 'rgb(0, 0, 0)'
 ```
 
-</details>
-<details><summary>**`let color = palette(index, fn?);`**</summary>
+### `let color = palette(index, fn?)`
 
 Get interpolated color from palette by `index` value within `0..1` range. Pass optional `fn` interpolation function, by default [lerp](https://npmjs.org/package/lerp) is used, but [smoothstep](https://npmjs.org/package/smoothstep) can be used as an alternative.
 
-</details>
 
 ## Credits
 
@@ -65,3 +62,5 @@ Thanks to **[@mattdesl](https://github.com/mattdesl/)** for [interpolation](http
 > [color-alpha](https://github.com/dy/color-alpha) — change alpha of a color string.<br/>
 > [color-spectrum](https://github.com/dy/color-spectrum) — convert spectrum, like FFT result, to color.<br/>
 > [color-space](https://github.com/scijs/color-space) — collection of color space transforms, useful for custom interpolation modes.<br/>
+
+© Dmitry Yv. MIT License
