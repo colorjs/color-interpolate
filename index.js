@@ -1,3 +1,5 @@
+'use strict'
+
 /**
  * @module  color-interpolate
  * Pick color from palette by index
@@ -6,7 +8,7 @@
 const parse = require('color-parse');
 const hsl = require('color-space/hsl');
 const lerp = require('lerp');
-const clamp = require('mumath/clamp');
+const clamp = require('clamp');
 
 module.exports = interpolate;
 

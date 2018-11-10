@@ -24,7 +24,7 @@ let gray = colormap(.5); // 'rgb(128, 128, 128)'
 </details>
 <details><summary>**`let palette = interpolate(colors);`**</summary>
 
-Create interpolator from a list of colors. Colors can be in any format: css color string, array with rgb channel values, object with `r`, `g`, `b` or `h`, `s`, `l` channel values or even a number, see [color-parse](https://github.com/dfcreative/color-parse) for reference.
+Create interpolator from a list of colors. Colors can be in any format: css color string, array with rgb channel values, object with `r`, `g`, `b` or `h`, `s`, `l` channel values or even a number, see [color-parse](https://github.com/dy/color-parse) for reference.
 
 Example:
 
@@ -53,7 +53,7 @@ Thanks to **[@mattdesl](https://github.com/mattdesl/)** for [interpolation](http
 
 ## In the wild
 
-> [settings-panel](https://github.com/dfcreative/settings-panel)<br/>
+> [settings-panel](https://github.com/dy/settings-panel)<br/>
 > [gl-waveform](https://github.com/audio-lab/gl-waveform)<br/>
 > [gl-spectrogram](https://github.com/audio-lab/gl-spectrogram)<br/>
 > [gl-spectrum](https://github.com/audio-lab/gl-spectrum)<br/>
@@ -62,4 +62,6 @@ Thanks to **[@mattdesl](https://github.com/mattdesl/)** for [interpolation](http
 
 > [colormap](https://github.com/bpostlethwaite/colormap) — collection of beautiful colormaps, a good source for palettes.<br/>
 > [nice-color-palettes](https://github.com/jam3/nice-color-palettes) — collection of beautiful color palettes from colourlovers.<br/>
-> [color-alpha](https://github.com/dfcreative/color-alpha) — change alpha of a color string.
+> [color-alpha](https://github.com/dy/color-alpha) — change alpha of a color string.<br/>
+> [color-spectrum](https://github.com/dy/color-spectrum) — convert spectrum, like FFT result, to color.<br/>
+> [color-space](https://github.com/scijs/color-space) — collection of color space transforms, useful for custom interpolation modes.<br/>
