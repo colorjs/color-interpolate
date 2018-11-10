@@ -17,43 +17,28 @@ let gray = colormap(.5); // 'rgb(128, 128, 128)'
 
 ## API
 
-### `const interpolate = require('color-interpolate')`
+### `let palette = require('color-interpolate')(colors)`
 
-`interpolate` is a color interpolator constructor.
-
-### `let palette = interpolate(colors)`
-
-Create interpolator from a list of colors. Colors can be in any format: CSS color string, array with RGB channel values, object with `r`, `g`, `b` or `h`, `s`, `l` channel values or even a number, see [color-parse](https://github.com/dy/color-parse) for reference.
-
-Example:
-
-```js
-const palettes = require('nice-color-palettes');
-const interpolate = require('color-interpolate');
-
-//pick random palette
-let palette = interpolate(palettes[32]);
-
-let activeColor = palette(.2); // 'rgb(51, 23 47)'
-let background = palette(1); // 'rgb(255, 255, 255)'
-let foreground = palette(0); // 'rgb(0, 0, 0)'
-```
+Create interpolator from a list of `colors`. Colors can be in any format: CSS color string, array with RGB channel values, object with `r`, `g`, `b` or `h`, `s`, `l` channel values or even a number, see [color-parse](https://github.com/dy/color-parse) for reference.
 
 ### `let color = palette(index, fn?)`
 
 Get interpolated color from palette by `index` value within `0..1` range. Pass optional `fn` interpolation function, by default [lerp](https://npmjs.org/package/lerp) is used, but [smoothstep](https://npmjs.org/package/smoothstep) can be used as an alternative.
 
+Example:
+
+```js
+const palettes = require('nice-color-palettes')
+const palette = require('color-interpolate')(palettes[32])
+
+let activeColor = palette(.2) // 'rgb(51, 23 47)'
+let background = palette(1) // 'rgb(255, 255, 255)'
+let foreground = palette(0) // 'rgb(0, 0, 0)'
+```
 
 ## Credits
 
 Thanks to **[@mattdesl](https://github.com/mattdesl/)** for [interpolation](https://github.com/mattdesl/interpolation) functions and **[@mikkoh](https://github.com/mikkoh/)** for API insight in [interpolation-arrays](https://github.com/jam3/interpolation-arrays).
-
-## In the wild
-
-> [settings-panel](https://github.com/dy/settings-panel)<br/>
-> [gl-waveform](https://github.com/audio-lab/gl-waveform)<br/>
-> [gl-spectrogram](https://github.com/audio-lab/gl-spectrogram)<br/>
-> [gl-spectrum](https://github.com/audio-lab/gl-spectrum)<br/>
 
 ## Related
 
