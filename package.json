@@ -1,6 +1,6 @@
 {
   "name": "color-interpolate",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "Pick color from a given color palette by index",
   "main": "index.js",
   "types": "index.d.ts",
