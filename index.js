@@ -5,10 +5,20 @@
  * Pick color from palette by index
  */
 
-const parse = require('color-parse');
+const parse = require('color-parse').default;
 const hsl = require('color-space/hsl');
-const lerp = require('lerp');
-const clamp = require('clamp');
+
+
+function clamp(value, min, max) {
+  return min < max
+    ? (value < min ? min : value > max ? max : value)
+    : (value < max ? max : value > min ? min : value)
+}
+
+
+function lerp(start, stop, step) {
+    return start*(1-step)+stop*step
+}
 
 module.exports = interpolate;
 
