@@ -5,7 +5,7 @@
  * Pick color from palette by index
  */
 
-const parse = require('color-parse').default;
+const parse = require('color-parse');
 const hsl = require('color-space/hsl');
 
 
