@@ -5,25 +5,13 @@
  * Pick color from palette by index
  */
 
-const parse = require('color-parse');
-const hsl = require('color-space/hsl');
+import parse from 'color-parse';
+import hsl from 'color-space/hsl.js';
 
+const lerp = (start, stop, step) => start*(1-step)+stop*step;
 
-function clamp(value, min, max) {
-  return min < max
-    ? (value < min ? min : value > max ? max : value)
-    : (value < max ? max : value > min ? min : value)
-}
-
-
-function lerp(start, stop, step) {
-    return start*(1-step)+stop*step
-}
-
-module.exports = interpolate;
-
-function interpolate (palette) {
-	palette = palette.map(function(c) {
+export default function interpolate (palette) {
+	palette = palette.map((c) => {
 		c = parse(c);
 		if (c.space != 'rgb') {
 			if (c.space != 'hsl') throw 'c.space' + 'space is not supported.';
@@ -33,9 +21,9 @@ function interpolate (palette) {
 		return c.values;
 	});
 
-	return function(t, mix) {
+	return (t, mix) => {
 		mix = mix || lerp;
-		t = clamp(t, 0, 1);
+		t = Math.min(Math.max(t, 0), 1);
 
 		var idx = ( palette.length - 1 ) * t,
 			lIdx = Math.floor( idx ),

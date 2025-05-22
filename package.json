@@ -4,6 +4,7 @@
   "description": "Pick color from a given color palette by index",
   "main": "index.js",
   "types": "index.d.ts",
+  "type": "module",
   "scripts": {
     "test": "node test"
   },
@@ -22,14 +23,14 @@
     "colormap",
     "gradient"
   ],
-  "author": "ΔY <dfcreative@gmail.com>",
+  "author": "Dmitry Iv <dfcreative@gmail.com>",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/colorjs/color-interpolate/issues"
   },
   "homepage": "https://github.com/colorjs/color-interpolate#readme",
   "dependencies": {
-    "color-parse": "^1.4.3",
-    "color-space": "^1.16.0"
+    "color-parse": "^2.0.2",
+    "color-space": "^2.3.2"
   }
 }

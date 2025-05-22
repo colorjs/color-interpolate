@@ -1,7 +1,6 @@
-'use strict'
 
-const assert = require('assert');
-const interpolate = require('./');
+import assert from 'assert';
+import interpolate from './index.js';
 
 let bw = interpolate(['black', 'white']);
 
