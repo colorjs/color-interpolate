@@ -1,10 +1,10 @@
-# color-interpolate [![stable](http://badges.github.io/stability-badges/dist/stable.svg)](http://github.com/badges/stability-badges)
+# color-interpolate [![test](https://github.com/colorjs/color-interpolate/actions/workflows/test.js.yml/badge.svg)](https://github.com/colorjs/color-interpolate/actions/workflows/test.js.yml) [![size](https://img.shields.io/bundlephobia/minzip/color-interpolate?label=size)](https://bundlephobia.com/result?p=color-interpolate) ![stable](https://img.shields.io/badge/stability-stable-green)
 
 For a given palette, return color by any float index. Useful for interpolating colormaps, color palettes or gradients.
 
 ## Usage
 
-[![npm install color-interpolate](https://nodei.co/npm/color-interpolate.png?mini=true)](https://npmjs.org/package/color-interpolate/)
+`$ npm install color-interpolate`
 
 ```js
 import interpolate from 'color-interpolate';
@@ -46,8 +46,8 @@ Thanks to **[@mattdesl](https://github.com/mattdesl/)** for [interpolation](http
 
 > [colormap](https://github.com/bpostlethwaite/colormap) — collection of beautiful colormaps, a good source for palettes.<br/>
 > [nice-color-palettes](https://github.com/jam3/nice-color-palettes) — collection of beautiful color palettes from colourlovers.<br/>
-> [color-alpha](https://github.com/dy/color-alpha) — change alpha of a color string.<br/>
-> [color-spectrum](https://github.com/dy/color-spectrum) — convert spectrum, like FFT result, to color.<br/>
-> [color-space](https://github.com/scijs/color-space) — collection of color space transforms, useful for custom interpolation modes.<br/>
+> [color-alpha](https://github.com/colorjs/color-alpha) — change alpha of a color string.<br/>
+> [color-spectrum](https://github.com/colorjs/color-spectrum) — convert spectrum, like FFT result, to color.<br/>
+> [color-space](https://github.com/colorjs/color-space) — collection of color space transforms, useful for custom interpolation modes.<br/>
 
 © Dmitry Iv. MIT License
