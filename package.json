@@ -1,12 +1,22 @@
 {
   "name": "color-interpolate",
-  "version": "2.0.0",
+  "version": "2.1.0",
   "description": "Pick color from a given color palette by index",
   "main": "index.js",
   "types": "index.d.ts",
   "type": "module",
+  "exports": {
+    ".": {
+      "types": "./index.d.ts",
+      "import": "./index.js"
+    }
+  },
+  "files": [
+    "index.js",
+    "index.d.ts"
+  ],
   "scripts": {
-    "test": "node test"
+    "test": "node test.js"
   },
   "repository": {
     "type": "git",
@@ -30,7 +40,6 @@
   },
   "homepage": "https://github.com/colorjs/color-interpolate#readme",
   "dependencies": {
-    "color-parse": "^2.0.2",
-    "color-space": "^2.3.2"
+    "color-rgba": "^3.1.0"
   }
 }

@@ -19,7 +19,7 @@ let gray = colormap(.5); // 'rgb(128, 128, 128)'
 
 ### `let palette = interpolate(colors)`
 
-Create interpolator from a list of `colors`. Colors can be in any format: CSS color string, array with RGB channel values, object with `r`, `g`, `b` or `h`, `s`, `l` channel values or even a number, see [color-parse](https://github.com/dy/color-parse) for reference.
+Create interpolator from a list of `colors`. Colors can be any string [color-rgba](https://github.com/colorjs/color-rgba) recognizes — hex, keywords, `rgb()`, `hsl()`, `lab()`, `oklch()`, `color(display-p3 …)` etc. — or an array with channel values, or a number. An unrecognized color throws.
 
 ### `let color = palette(index, fn?)`
 

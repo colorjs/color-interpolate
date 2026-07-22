@@ -1,5 +1,3 @@
-declare module "color-interpolate" {
-    function interpolate(palette: string[]): (index: number) => string
-
-    export = interpolate
-}
+export default function interpolate(
+	palette: (string | number)[]
+): (index: number, mix?: (a: number, b: number, t: number) => number) => string;
